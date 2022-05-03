@@ -26,7 +26,7 @@ docker build -t {package_name} .
 ***
 API documentation is here.  
   
-```json-data-store``` provides the following objects:
+```json-data-store``` provides the following domains:
 ###Record
 ###Collection
 ###Views

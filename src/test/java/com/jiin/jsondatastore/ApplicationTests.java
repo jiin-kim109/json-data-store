@@ -1,10 +1,10 @@
-package com.jiin.jsonstorageservice;
+package com.jiin.jsondatastore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JsonStorageServiceApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
