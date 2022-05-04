@@ -1,9 +1,10 @@
-package com.jiin.jsondatastore.model;
+package com.jiin.jsondatastore.restservice.model;
 
 import javax.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.jiin.jsondatastore.validator.NotEmptyNode;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -18,10 +19,10 @@ public class Record {
     @NotNull
     private String version;
 
-    @NotNull
+    @NotEmptyNode
     private JsonNode payload;
 
-    @NotNull
+    @NotEmptyNode
     private JsonNode profile;
 
     @Builder.Default
